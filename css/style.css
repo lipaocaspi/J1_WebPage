@@ -6,14 +6,15 @@ body {
     color: white;
     margin: 1% 5%;
     min-width: 600px;
+    height: 100%;
+}
+
+.container {
+    display: grid;
 }
 
 p {
     margin: 0;
-}
-
-.container {
-    max-height: 100%;
 }
 
 .header {
@@ -44,20 +45,28 @@ p {
 }
 
 .home {
-    width: 100%;
-    margin: 1%;
-    display: flex;
+    margin: 10% 6% 10% 6%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-content: end;
 }
 
 .homeTitle {
-    font-size: 90px;
+    font-size: 7rem;
     font-weight: 500;
 }
 
 .homeText {
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.rightHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about {
@@ -76,6 +85,8 @@ p {
 .button {
     background-color: #ff702a;
     font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
     padding: 5px 10px;
     color: white;
 }
