@@ -45,7 +45,7 @@ p {
     font-size: 1.5rem;
 }
 
-.home {
+.section {
     margin: 10% 6% 10% 6%;
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -69,15 +69,6 @@ p {
     justify-content: center;
 }
 
-.about {
-    margin: 10% 6% 10% 6%;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    align-items: center;
-    justify-content: center;
-    align-content: end;
-}
-
 .aboutText {
     font-size: 4rem;
     font-weight: 500;
@@ -93,6 +84,8 @@ p {
     justify-content: center;
 }
 
+/* Botón */
+
 .button {
     background-color: #ff702a;
     font-family: 'Poppins', sans-serif;
@@ -100,6 +93,10 @@ p {
     font-weight: 600;
     padding: 5px 10px;
     color: white;
+}
+
+.btnBig {
+    width: 30%;
 }
 
 .menu {
@@ -136,8 +133,4 @@ p {
     justify-content: center;
     height: 75%;
     margin: 10% 6% 10% 6%;
-}
-
-.btnBig {
-    width: 30%;
 }
