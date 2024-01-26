@@ -17,7 +17,7 @@ p {
     margin: 0;
 }
 
-.header {
+.header {   
     display: grid;
     grid-template-columns: 1fr 40%;
 }
@@ -42,6 +42,7 @@ p {
 
 .title {
     color: #ff702a;
+    font-size: 1.5rem;
 }
 
 .home {
@@ -50,7 +51,6 @@ p {
     grid-template-columns: repeat(2, 50%);
     align-items: center;
     justify-content: center;
-    align-content: end;
 }
 
 .homeTitle {
@@ -70,16 +70,27 @@ p {
 }
 
 .about {
-    width: 100%;
-    margin: 1%;
-    display: flex;
+    margin: 10% 6% 10% 6%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-content: end;
 }
 
 .aboutText {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 500;
+}
+
+.contentAbout {
+    font-size: 1.5rem;
+}
+
+.leftAbout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button {
@@ -89,4 +100,44 @@ p {
     font-weight: 600;
     padding: 5px 10px;
     color: white;
+}
+
+.menu {
+    margin: 10% 6% 10% 6%;
+}
+
+.menuText {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.blackText {
+    color: black;
+    font-weight: 500;
+}
+
+.service {
+    margin: 10% 6% 10% 6%;
+}
+
+.learnMore {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    margin: 10% 6% 10% 6%;
+}
+
+.btnBig {
+    width: 30%;
 }
