@@ -23,6 +23,29 @@ p {
     text-decoration: none;
 }
 
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0px 20px;
+    padding-left: 60px;
+}
+
+.menuA {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 0px 30px;
+    transition: 0.4s;
+}
+
+.navTarget {
+    display: none;
+    cursor: pointer;
+    order: 1;
+}
+
 .section {
     margin: 10% 6% 10% 6%;
     display: grid;
@@ -58,17 +81,6 @@ p {
     grid-template-columns: 1fr 40%;
 }
 
-.menuP {
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    align-items: center;
-    justify-content: end;
-}
-
-.menuMobileOff {
-    display: none;
-}
-
 .rightHome {
     display: flex;
     align-items: center;
@@ -85,14 +97,10 @@ p {
 
 /* MENU */
 
-.menu {
-    margin: 8% 6% 8% 6%;
-}
-
 .list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2%;
+    gap: 1%;
     place-items: center;
 }
 
@@ -102,9 +110,9 @@ p {
 
 .foodItem {
     background-color: #ffefe8; 
-    padding: 8%; 
+    padding: 7%; 
     position: relative;
-    width: 70%;
+    width: 60%;
 }
 
 .foodIcon {
@@ -144,6 +152,11 @@ p {
     gap: 5%;
 }
 
+.iconContacts {
+    margin: 0% auto 0% auto;
+    padding: 0% 0% 20%;
+}
+
 .hrContact {
     width: 30%; 
     border: 1px solid #ff702a;
@@ -153,6 +166,7 @@ p {
     display: grid;
     grid-template-columns: repeat(4, 20%);
     gap: 5%;
+    
 }
 
 .contactLogos {
@@ -221,18 +235,35 @@ p {
 }
 
 @media (max-width : 840px) {
-    .menuH {
-        display: none;
+    .navTarget {
+        display: block;
+        color: #ff702a;
+        font-size: 2rem; 
+        text-decoration: none;
     }
-    .menuMobileOn {
-        display: grid;
-        align-items: center;
-        justify-content: end;
+    .menuP {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c2b47;
+        left: 0;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 100px;
+        z-index: 1;        
+        clip-path: circle(0% at top right);
+        transition: clip-path 0.4s;
     }
 
-    .menuIcon:hover{
-        color: #ff702a;
-        cursor: pointer;
+    .menuP:target{
+        clip-path: circle(150% at top right);
+    }
+
+    .menuP a {
+        display: block;
+        padding: 20px;
     }
 
     .down {
