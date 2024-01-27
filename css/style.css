@@ -92,7 +92,8 @@ p {
 .list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10%;
+    gap: 2%;
+    place-items: center;
 }
 
 .menuImage {
@@ -103,6 +104,7 @@ p {
     background-color: #ffefe8; 
     padding: 8%; 
     position: relative;
+    width: 70%;
 }
 
 .foodIcon {
@@ -118,6 +120,10 @@ p {
     margin: 8% 6% 8% 6%;
 }
 
+.serviceImage {
+    width: 60%;
+}
+
 /* CONTACT */
 
 .learnMore {
@@ -125,7 +131,7 @@ p {
     align-items: center;
     justify-content: center;
     height: 75%;
-    margin: 8% 3% 8% 3%;
+    margin: 10% 3% 10% 3%;
 }
 
 .contact {
@@ -135,7 +141,7 @@ p {
 .listContact {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1%;
+    gap: 5%;
 }
 
 .hrContact {
@@ -231,5 +237,38 @@ p {
 
     .down {
         grid-template-columns: 100%;
+    }
+    
+    .leftHome {
+        text-align: center;
+    }
+
+    .rightAbout {
+        text-align: center;
+    }
+
+    .center {
+        text-align: center;
+        place-items: center;
+    }
+
+    .reverse {
+        order: -1;
+    }
+
+    .newImageSize {
+        width: 50%;
+    }
+
+    .newFontTitle {
+        font-size: 3.5rem;
+    }
+
+    .newFontSub {
+        font-size: 1.5rem;
+    }
+
+    .newFont {
+        font-size: 2rem;
     }
 }
