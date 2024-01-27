@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* GENERALES */
+
 body {
     background-color: #1e1d2b;
     font-family: 'Poppins', sans-serif;
@@ -17,6 +19,41 @@ p {
     margin: 0;
 }
 
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.section {
+    margin: 10% 6% 10% 6%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionImage {
+    width: 70%;
+}
+
+.title {
+    color: #ff702a;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.blackText {
+    color: black;
+}
+
+.backGround {
+    background-color: #ffefe8;
+}
+
+/* HOME */
+
 .header {   
     display: grid;
     grid-template-columns: 1fr 40%;
@@ -28,59 +65,13 @@ p {
     align-items: center;
 }
 
-.pageTitle {
-    color: #ff702a;
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.link {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.title {
-    color: #ff702a;
-    font-size: 1.5rem;
-}
-
-.section {
-    margin: 10% 6% 10% 6%;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    align-items: center;
-    justify-content: center;
-}
-
-.homeTitle {
-    font-size: 5rem;
-    font-weight: 500;
-}
-
-.homeText {
-    font-size: 2rem;
-    font-weight: 600;
-}
-
 .rightHome {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.aboutText {
-    font-size: 4rem;
-    font-weight: 500;
-}
-
-.contentAbout {
-    font-size: 1.5rem;
-}
-
-.contentServices {
-    font-size: 1.2rem;
-}
+/* ABOUT */
 
 .leftAbout {
     display: flex;
@@ -88,28 +79,10 @@ p {
     justify-content: center;
 }
 
-/* Botón */
-
-.button {
-    background-color: #ff702a;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 5px 10px;
-    color: white;
-}
-
-.btnBig {
-    width: 30%;
-}
+/* MENU */
 
 .menu {
     margin: 8% 6% 8% 6%;
-}
-
-.menuText {
-    font-size: 4rem;
-    font-weight: 500;
 }
 
 .list {
@@ -118,24 +91,30 @@ p {
     gap: 10%;
 }
 
-.listContact {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1%;
+.menuImage {
+    width: 80%;
 }
 
-.centerText {
-    text-align: center;
+.foodItem {
+    background-color: #ffefe8; 
+    padding: 8%; 
+    position: relative;
 }
 
-.blackText {
-    color: black;
-    font-weight: 500;
+.foodIcon {
+    position: absolute; 
+    background-color:#ff702a; 
+    top: 1px; 
+    right: 1px;
 }
+
+/* SERVICE */
 
 .service {
     margin: 8% 6% 8% 6%;
 }
+
+/* CONTACT */
 
 .learnMore {
     display: grid;
@@ -149,9 +128,21 @@ p {
     margin: 10% 10% 5% 10%;
 }
 
+.listContact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
+}
+
+.hrContact {
+    width: 30%; 
+    border: 1px solid #ff702a;
+}
+
 .contacts {
     display: grid;
-    grid-template-columns: repeat(4, 15%);
+    grid-template-columns: repeat(4, 20%);
+    gap: 5%;
 }
 
 .contactLogos {
@@ -162,4 +153,59 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 100%;
+}
+
+/* FONTS */
+
+.font1 {
+    font-size: 1rem;
+}
+
+.font12 {
+    font-size: 1.2rem;
+}
+
+.font13 {
+    font-size: 1.3rem;
+}
+
+.font15 {
+    font-size: 1.5rem;
+}
+
+.font2 {
+    font-size: 2rem;
+}
+
+.font3 {
+    font-size: 3rem;
+}
+
+.font4 {
+    font-size: 4rem;
+}
+
+.font5 {
+    font-size: 5rem;
+}
+
+.font500 {
+    font-weight: 500;
+}
+
+.font600 {
+    font-weight: 600;
+}
+
+/* BOTÓN */
+
+.button {
+    background-color: #ff702a;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 10px;
+    color: white;
+}
+
+.btnBig {
+    width: 35%;
 }
