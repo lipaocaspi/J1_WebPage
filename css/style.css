@@ -62,7 +62,7 @@ p {
     display: grid;
     grid-template-columns: repeat(5, 20%);
     align-items: center;
-    justify-content: start;
+    justify-content: end;
 }
 
 .menuMobileOff {
@@ -222,5 +222,14 @@ p {
         display: grid;
         align-items: center;
         justify-content: end;
+    }
+
+    .menuIcon:hover{
+        color: #ff702a;
+        cursor: pointer;
+    }
+
+    .down {
+        grid-template-columns: 100%;
     }
 }
