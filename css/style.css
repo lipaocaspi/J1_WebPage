@@ -7,7 +7,6 @@ body {
     font-family: 'Poppins', sans-serif;
     color: white;
     margin: 1% 5%;
-    min-width: 600px;
     height: 100%;
 }
 
@@ -63,6 +62,11 @@ p {
     display: grid;
     grid-template-columns: repeat(5, 20%);
     align-items: center;
+    justify-content: start;
+}
+
+.menuMobileOff {
+    display: none;
 }
 
 .rightHome {
@@ -92,7 +96,7 @@ p {
 }
 
 .menuImage {
-    width: 80%;
+    width: 70%;
 }
 
 .foodItem {
@@ -208,4 +212,15 @@ p {
 
 .btnBig {
     width: 35%;
+}
+
+@media (max-width : 840px) {
+    .menuH {
+        display: none;
+    }
+    .menuMobileOn {
+        display: grid;
+        align-items: center;
+        justify-content: end;
+    }
 }
